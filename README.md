@@ -62,3 +62,13 @@ Por favor asegúrate de actualizar las pruebas según corresponda.
 ## Contacto
 
 Eduardo González - eduardog.carbonell@gmail.com - 617680026
+
+SI NECESITAS LOGIN PARA ROL SUPERADMIN - 
+EMAIL: edu1493@gmail.com
+PASSWORD: 123456
+
+SI NECESITAS LOGIN PARA ROL EMPLEADO *INFORMATIVO* - 
+employee@gmail.com
+PASSWORD: 123456
+
+
