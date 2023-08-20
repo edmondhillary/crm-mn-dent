@@ -12,12 +12,20 @@ const Login = () => {
 
   const [loggedIn, setLoggedIn] = useState(false); // Agregar variable de estado
   const handleLogin = async (values) => {
-    await login(values);
-    navigate(`/empleados`);
-    await getUserInfo(1, 1, 1, 1);
-    setLoggedIn(true);
+    try {
+      await login(values);
+      navigate(`/empleados`);
+      await getUserInfo(1, 1, 1, 1);
+      setLoggedIn(true);
+    } catch (error) {
+      console.error("Error al iniciar sesión:", error);
+      setLoggedIn(false);
+      navigate(`/`);
+      window.location.reload();
+      
+    }
   };
-
+  
   useEffect(() => {
     if (isError) {
       notification.error({
