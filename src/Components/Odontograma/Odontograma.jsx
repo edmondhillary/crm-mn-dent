@@ -13,7 +13,7 @@ import diente4333 from "../../assets/diente43ok.png";
 import diente42413132 from "../../assets/diente42ok.png";
 import diente1222 from "../../assets/diente12ok.png";
 // import { useMediaQuery } from "react-responsive";
-import "./odontograma.scss";
+import "./Odontograma.scss";
 
 function Odontograma({
   patientInfo,
