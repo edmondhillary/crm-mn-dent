@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from 'react'
 import AppReducer from './UserReducer.js'
 import axios from 'axios'
 import { Modal } from 'antd';
-export const URL = 'https://dental-dashboard-backend-production.up.railway.app'
+export const URL = 'dental-dashboard-backend-production.up.railway.app'
 const token = JSON.parse(localStorage.getItem("token"));
 const user = JSON.parse(localStorage.getItem('user'));
 
@@ -23,6 +23,7 @@ export const UsersProvider = ({ children }) => {
   const login = async (user) => {
 
     try {
+      console.log({user})
       const res = await axios.post( URL + '/login', user);
       dispatch({
         type: "POST_USER",
