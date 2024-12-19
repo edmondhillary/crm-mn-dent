@@ -6,11 +6,12 @@ export async function getEmployees(){
     const res = await axios.get(`${URL}/empleados`, {
         headers: { Authorization: token }
     });
-    console.log(res.data)
+    console.log(res.data, "hello data:")
     return res.data;
 
 }
 export async function getEmployeeByID(id){
+
     const token = JSON.parse(localStorage.getItem('token'));
     const res = await axios.get(`${URL}/empleados/id/${id}`, {
         headers: { Authorization: token }
